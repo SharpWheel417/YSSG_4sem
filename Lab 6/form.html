@@ -1,0 +1,54 @@
+<form action="PHPForm.php" method="POST">
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="password">Пароль:</label>
+    <input type="password" id="password" name="password" required>
+
+    <label for="confirm_password">Повторите пароль:</label>
+    <input type="password" id="confirm_password" name="confirm_password" required>
+
+    <label for="ownership">Форма собственности:</label>
+    <select id="ownership" name="ownership" required>
+        <option value="individual">Физическое лицо</option>
+        <option value="company">Юридическое лицо</option>
+    </select>
+
+    <label for="organization_name">Название организации:</label>
+    <input type="text" id="organization_name" name="organization_name" required>
+
+    <label for="contact_person">Контактное лицо:</label>
+    <input type="text" id="contact_person" name="contact_person" required>
+
+    <label for="contact_phone">Контактный телефон:</label>
+    <input type="tel" id="contact_phone" name="contact_phone" required>
+
+    <label for="address">Адрес:</label>
+    <input type="text" id="address" name="address" required>
+
+    <label for="source">Откуда вы узнали о компании:</label>
+    <select id="source" name="source" required>
+        <option value="internet">Интернет</option>
+        <option value="friends">От друзей</option>
+        <option value="advertisement">Реклама</option>
+        <option value="other">Другое</option>
+    </select>
+
+    <button type="submit">Зарегистрироваться</button>
+</form>
+<style>
+    form {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 10px;
+    }
+
+    label {
+        text-align: left;
+    }
+
+    input,
+    select {
+        width: 100%;
+    }
+</style>

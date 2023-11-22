@@ -1,0 +1,11 @@
+.card {
+    display: flex;
+    margin-top: 40vh;
+    border: 1px solid black;
+    height: min-content;
+    flex-direction: row;
+}
+
+.card > img {
+    height: 250px;
+}

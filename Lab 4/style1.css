@@ -1,0 +1,13 @@
+td, th {
+    border: 4px orange solid;
+    margin: 0;
+    width: 4rem;
+    height: 2rem;
+    background-color: green;
+}
+
+table {
+    border: none;
+    padding: 0;
+    background-color: orange;
+}

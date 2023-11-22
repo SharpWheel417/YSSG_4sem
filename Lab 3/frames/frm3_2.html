@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lab 3 – frame 3</title>
+    <link href="/frames/style.css" rel="stylesheet" type="text/css">
+    <style>
+        h2 {
+            font-family: arial;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 style="size: 15px;">Раздел 2</h1>
+    <h4>Задание 2</h4>
+    <form action="submit.php" method="post">
+        <h2>Страница 1</h2>
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="age">Возраст:</label>
+        <input type="number" id="age" name="age" required><br>
+
+        <h2>Страница 2</h2>
+        <label for="favoriteProduct">Любимый продукт молочной продукции:</label>
+        <select id="favoriteProduct" name="favoriteProduct" required>
+            <option value="">Выберите продукт</option>
+            <option value="Молоко">Молоко</option>
+            <option value="Сыр">Сыр</option>
+            <option value="Творог">Творог</option>
+            <option value="Йогурт">Йогурт</option>
+        </select><br>
+
+        <h2>Страница 3</h2>
+        <label for="frequency">Как часто вы покупаете молочную продукцию:</label><br>
+        <input type="radio" id="frequency" name="frequency" value="Ежедневно" required>
+        <label for="frequency">Ежедневно</label><br>
+        <input type="radio" id="frequency" name="frequency" value="Несколько раз в неделю" required>
+        <label for="frequency">Несколько раз в неделю</label><br>
+        <input type="radio" id="frequency" name="frequency" value="Раз в неделю" required>
+        <label for="frequency">Раз в неделю</label><br>
+        <input type="radio" id="frequency" name="frequency" value="Реже одного раза в неделю" required>
+        <label for="frequency">Реже одного раза в неделю</label><br>
+
+        <h2>Страница 4</h2>
+        <label for="feedback">Ваш комментарий:</label><br>
+        <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Clear</button>
+    </form>
+
+</body>
+
+</html>
